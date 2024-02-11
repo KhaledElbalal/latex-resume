@@ -107,6 +107,7 @@
 \newcommand{\email}[1]{\faIcon{envelope} \href{mailto:#1}{#1}}
 \newcommand{\phone}[1]{\faIcon{phone-alt} \href{tel:+1-#1}{#1}}
 \newcommand{\github}[1]{\faIcon{github} \href{https://github.com/#1/}{#1}}
+\newcommand{\website}[1]{\faIcon{globe} \href{https://www.#1/}{#1}}
 \newcommand{\linkedin}[1]{\faIcon{linkedin} \href{https://linkedin.com/in/#1/}{#1}}
 \newcommand{\location}[1]{\faIcon{map-marker-alt} #1}
 % Experience/Achievements
@@ -122,6 +123,18 @@
 \newcommand{\experience}[5]{%
     \noindent\role{#1}{#2}\hfill\tenure{#3}{#4}\par
     #5
+    \vspace{7pt}
+}
+
+\newcommand{\githubexperience}[6]{%
+    \noindent\href{#6}{\role{#1}{#2}}\hfill\tenure{#3}{#4}\par
+    #5
+    \vspace{7pt}
+}
+
+
+\newcommand{\course}[2]{%
+    \noindent\textbf{#1}\hfill\emph{#2}\par
     \vspace{7pt}
 }
 
